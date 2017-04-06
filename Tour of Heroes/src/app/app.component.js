@@ -23,7 +23,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n  <h1>{{title}}</h1>\n  <h2>My Heroes</h2>\n  <ul class=\"heroes\">\n    <li *ngFor=\"let hero of dbhero\">\n    <span class=\"badge\">{{hero.id}}</span> {{hero.name}}\n    </li>\n  </ul>\n  \n  ",
+        templateUrl: './app.component.html',
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
