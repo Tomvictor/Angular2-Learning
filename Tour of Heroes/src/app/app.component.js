@@ -18,6 +18,9 @@ var AppComponent = (function () {
         this.hero = 'Windstorm';
         this.dbhero = HEROES;
     }
+    AppComponent.prototype.onSelect = function (hero) {
+        this.selectedHero = hero;
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
