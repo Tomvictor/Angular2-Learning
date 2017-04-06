@@ -17,7 +17,7 @@ export class Hero {
 export class AppComponent {
   title = 'Tour of Heroes';
   hero = 'Windstorm';
-  dbhero = HEROES;
+  heroes = HEROES;
   selectedHero: Hero;
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
