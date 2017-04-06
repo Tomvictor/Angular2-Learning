@@ -16,14 +16,14 @@ var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Tour of Heroes';
         this.hero = 'Windstorm';
-        this.derod = HEROES;
+        this.dbhero = HEROES;
     }
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\n  <h1>{{title}}</h1>\n  <h2>{{hero.name}} details!</h2>\n  <div><label>id: </label>{{hero.id}}</div>\n  <div><label>name: </label>{{hero.name}}</div>\n  ",
+        template: "\n  <h1>{{title}}</h1>\n  <h2>My Heroes</h2>\n  <ul class=\"heroes\">\n    <li *ngFor=\"let hero of dbhero\">\n    <span class=\"badge\">{{hero.id}}</span> {{hero.name}}\n    </li>\n  </ul>\n  \n  ",
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
