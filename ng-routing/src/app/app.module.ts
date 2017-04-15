@@ -20,12 +20,12 @@ import { CharactersListComponent } from './components/characters-list/characters
     HttpModule,
     RouterModule.forRoot([
       {
-        path : 'movie',
+        path:'movies',
         component : MoviesListComponent
       },
       {
-        path  : 'characters',
-        component : CharactersListComponent
+        path:'characters',
+        component:CharactersListComponent
       }
     ])
   ],

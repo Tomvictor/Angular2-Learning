@@ -1,7 +1,9 @@
 <h1>
   {{title}}
 </h1>
-<div>
-  <app-movies-list></app-movies-list> <br>
-  <app-characters-list></app-characters-list>
-</div>
+
+<a routerLink="/movies/">Movies</a>
+<a routerLink="/characters">Characters</a>
+
+<router-outlet></router-outlet>
+<!-- Routed views go here -->
