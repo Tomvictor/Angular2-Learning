@@ -6,7 +6,7 @@ import { CHARACTERS } from '../classes/data-characters'
 export class CharactersService {
 
   constructor() { }
-  getCharacter():Promise<Character[]> {
+  getCharacter() :Promise<Character[]> {
     return Promise.resolve(CHARACTERS) ;
   }
 
