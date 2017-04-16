@@ -1,4 +1,9 @@
-<p>
-  movies-list works!
-</p>
- 
+<h2>
+  Starwar Movies List
+</h2>
+
+<ul>
+  <li *ngFor="let movie of movies">
+    <app-movie [movie]="movie"></app-movie>
+  </li>
+</ul>

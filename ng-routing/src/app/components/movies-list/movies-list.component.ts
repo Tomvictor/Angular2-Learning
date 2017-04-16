@@ -10,10 +10,10 @@ import { MoviesService } from '../../service/movies.service' ;
   providers : [MoviesService]
 })
 export class MoviesListComponent implements OnInit {
-  movie:Movie[];
+  movies:Movie[];
   constructor(private MoviesService:MoviesService) { }
   getMovies():void{
-    this.MoviesService.getMovies().then(movies => this.movie = movies) ;
+    this.MoviesService.getMovies().then(movies => this.movies = movies) ;
   }
 
   ngOnInit() {

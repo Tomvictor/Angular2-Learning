@@ -9,10 +9,10 @@ import { CharactersService } from '../../service/characters.service' ;
   providers: [CharactersService]
 })
 export class CharactersListComponent implements OnInit {
-  character:Character[];
+  characters:Character[];
   constructor(private CharactersService:CharactersService) { }
   getCharacter():void{
-    this.CharactersService.getCharacter().then(charavter => this.character = charavter);
+    this.CharactersService.getCharacter().then(charavter => this.characters = charavter);
   }
 
   ngOnInit() {
